@@ -6,6 +6,7 @@
     "start": "parcel src/index.html --open"
   },
   "dependencies": {
+    "date-fns": "^2.30.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
