@@ -26,6 +26,7 @@ Designed to be clean, simple, and responsive, this project delivers a good balan
 ## Technologies Used
 
 - **React 18**
+- **JavaScript**
 - **Parcel**
 - **Tailwind CSS**
 - **PostCSS**
