@@ -2,7 +2,7 @@
 
 ## About the Project
 
-**Timeline Visualization** is a React project that implements a compact and efficient timeline component to visualize items distributed across horizontal lanes.
+**Airtable Timeline** is a React project that implements a compact and efficient timeline component to visualize items distributed across horizontal lanes.
 
 This timeline arranges items in lanes so that events that do not overlap can share the same lane, maximizing the use of space. The component supports zooming in and out and allows inline editing of item names, providing a user-friendly and interactive experience.
 
@@ -50,6 +50,7 @@ Designed to be clean, simple, and responsive, this project delivers a good balan
 - Clean and readable code that’s maintainable.
 - The timeline effectively maximizes horizontal space by lane sharing.
 - The application is performant
+- The application is responsive
 
 ---
 
