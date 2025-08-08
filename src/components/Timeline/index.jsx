@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
-import { assignLanes } from './assignLanes'
-import { getRange, dayIndex } from './utils'
-import TimelineItem from './TimelineItem'
+import { assignLanes } from '../../assignLanes'
+import { getRange, dayIndex } from '../../utils/utils'
+import TimelineItem from '../TimelineItem/index.'
 import { addDays, differenceInCalendarDays, parseISO, format } from 'date-fns'
 
 export default function Timeline({ items }) {
@@ -72,31 +72,31 @@ export default function Timeline({ items }) {
 
                     <div className="pt-10 pb-6">
                         {Array.from({ length: lanesCount }).map((_, laneIdx) => (
-                        <div key={laneIdx} className="relative h-12 mb-3">
-                            {localItems.map(item => {
-                                if (assignment[item.id] !== laneIdx) return null
+                            <div key={laneIdx} className="relative h-12 mb-3">
+                                {localItems.map(item => {
+                                    if (assignment[item.id] !== laneIdx) return null
 
-                                    const leftDays = dayIndex(item.start, min)
-                                    const widthDays = Math.max(1, dayIndex(item.end, min) - leftDays + 1)
+                                        const leftDays = dayIndex(item.start, min)
+                                        const widthDays = Math.max(1, dayIndex(item.end, min) - leftDays + 1)
 
-                                    const leftPx = leftDays * scale + 2
-                                    const widthPx = Math.max(widthDays * scale - 4, 8)
+                                        const leftPx = leftDays * scale + 2
+                                        const widthPx = Math.max(widthDays * scale - 4, 8)
 
-                                return (
-                                    <div
-                                        key={item.id}
-                                        style={{
-                                            left: leftPx,
-                                            width: widthPx,
-                                            top: 0
-                                        }}
-                                        className="absolute group"
-                                    >
-                                        <TimelineItem item={item} onEdit={onEdit} />
-                                    </div>
-                                )
-                            })}
-                        </div>
+                                    return (
+                                        <div
+                                            key={item.id}
+                                            style={{
+                                                left: leftPx,
+                                                width: widthPx,
+                                                top: 0
+                                            }}
+                                            className="absolute group"
+                                        >
+                                            <TimelineItem item={item} onEdit={onEdit} />
+                                        </div>
+                                    )
+                                })}
+                            </div>
                         ))}
                     </div>
                 </div>

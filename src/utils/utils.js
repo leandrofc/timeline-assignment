@@ -10,3 +10,13 @@ export function getRange(items) {
     const max = dates.reduce((a, b) => (a > b ? a : b))
     return { min, max }
 }
+
+export const COLORS = [
+    '#3b82f6',
+    '#ef4444',
+    '#10b981',
+    '#f59e0b',
+    '#8b5cf6',
+    '#ec4899',
+    '#14b8a6',
+]

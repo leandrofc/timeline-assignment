@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { format, parseISO } from 'date-fns'
 
-const COLORS = [
-  '#3b82f6',
-  '#ef4444',
-  '#10b981',
-  '#f59e0b',
-  '#8b5cf6',
-  '#ec4899',
-  '#14b8a6',
-]
+import { COLORS } from '../../utils/utils'
 
 export default function TimelineItem({ item, onEdit }) {
     const [editing, setEditing] = useState(false)
