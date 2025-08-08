@@ -1,4 +1,4 @@
-# 📅 Timeline Visualization Component
+# 📅 Airtable Timeline
 
 ## About the Project
 
@@ -49,12 +49,14 @@ Designed to be clean, simple, and responsive, this project delivers a good balan
 - Simplicity and ease of use.
 - Clean and readable code that’s maintainable.
 - The timeline effectively maximizes horizontal space by lane sharing.
+- The application is performant
 
 ---
 
 ## What I would change if I were to do it again
 
 - Invest more time in UI/UX design, using Figma or similar tools for a more polished look.
+- Use Typescript for a better development experience
 - Add drag-and-drop support to adjust event dates interactively.
 - Implement unit and integration tests for better coverage.
 
